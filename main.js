@@ -33,22 +33,16 @@ for (let i = 0; i < disappear.length; i++){
 
 let meteor = document.querySelectorAll("#destroy-all");
 
-
 meteor.addEventListener('click', function(){
     for (let i = 0; i < crossout.length; i++){
-        let co = crossout[i];
-        co.style.textDecoration = "line-through";
-        }
-
-    for (let i = 0; i < crossout.length; i++){
-        let co = crossout[i];
-        co.style.textDecoration = "line-through";
-        }
-
+        crossout[i].style.textDecoration = "line-through";
+    }
+    for (let i = 0; i < fadeout.length; i++){
+        fadeout[i].style.opacity = "0.0";
+    }
     for (let i = 0; i < disappear.length; i++){
-        let dis = disappear[i];
-        dis.style.width = '0px';
-        }
-    })
+        disappear[i].style.width = '0px';
+    }
+})
 
 
